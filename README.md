@@ -24,14 +24,17 @@ Uma vez a venv ativada, instale os requisitos necessários para o programa:
 
 ### Migrando e populando o banco
 Para a migração do banco dados deve ser feita através do comando
+
         C:\> python3 manage.py db init
         C:\> python3 manage.py db migrate --message 'initial database migration'
         C:\> python3 manage.py db upgrade
 
 Os status das leads são fixos e é importante criá-los antes da criação de qualquer lead. Para isso abra o arquivo:
+
         dasafio_elogroup/app/main/__init__.py
 
 descomente a linha:
+
         #api.add_namespace(status_ns, path='/status') # Not safe - use for populating the status db
 
 Use o comando post UMA VEZ.
@@ -39,6 +42,7 @@ Use o comando post UMA VEZ.
 ### Para rodar
 
 Para rodar é só estar na pasta raíz do projeto e digita o que se segue:
+
         C:\> python3 manage.py run
 
 Abra o seu navegador de preferencia e entre em 127.0.0.1/5000. Lá, aparecerá todas as funcionalidades proporcionadas pela API
