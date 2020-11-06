@@ -10,4 +10,4 @@ class Opportunity(db.Model):
 		self.description = description
 
 	def __repr__(self):
-		return '<Oportunity id: %r>' % self.id
+		return '<Opportunity id: %r>' % self.id

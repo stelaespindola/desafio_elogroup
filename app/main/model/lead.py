@@ -13,7 +13,7 @@ class Lead(db.Model):
 	status_id = db.Column(db.Integer, db.ForeignKey('status.id'))
 
 	customers = db.relationship('Customer', backref='lead', lazy='dynamic')
-	oportunities = db.relationship('Oportunity', backref='lead', lazy='dynamic')
+	oportunities = db.relationship('Opportunity', backref='lead', lazy='dynamic')
 
 	def __init__(self, customer_name, customer_phone, customer_email, status):
 		self.date = datetime.now()
