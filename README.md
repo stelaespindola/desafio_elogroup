@@ -17,8 +17,8 @@ Ative a venv com o comando:
     C:\> <venv>\Scripts\activate.bat
 
 ## Instalando os Pre-requisitos
-    Uma vez a venv ativada, instale os requisitos necessários para o programa:
-        C:\> pip install -r requirements.txt
+Uma vez a venv ativada, instale os requisitos necessários para o programa:
+    C:\> pip install -r requirements.txt
 
 ## O Sistema
 
@@ -28,6 +28,7 @@ Para a migração do banco dados deve ser feita através do comando
 
 Os status das leads são fixos e é importante criá-los antes da criação de qualquer lead. Para isso abra o arquivo:
     dasafio_elogroup/app/main/__init__.py
+
 descomente a linha
     #api.add_namespace(status_ns, path='/status') # Not safe - use for populating the status db
 
@@ -46,4 +47,4 @@ No campo payload, substitua os valores "string" pelo seu "user" e "password" e c
 
 Clique na aba auth, e faça o login usando o mesmo comando Try out. Digite os valores usados para criar o seu usuario anteriormente e clique em execute.  A mensagem de resposta trará um campo com nome Authorization. Copie o conteudo de authorization sem as aspas. Clique no botão Authorize no canto superior esquerdo da janela e cole o valor no campo Value e clique em Authorize.
 
-Todas as funcionalidades podem ser acessadas uma vez que a autorização foi completada. 
+Todas as funcionalidades podem ser acessadas uma vez que a autorização foi completada.
