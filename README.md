@@ -3,21 +3,28 @@
 Esse repositório contém o código de resposta para o Desafio proposto pela EloGroup descrito no arquivo pdf.
 
 Para utilizá-lo é necessário:
-    Python 3
-    venv
-    mysql
+
+        Python 3
+        venv
+        mysql
 
 ## Criando a venv
 No Windows:
 Abra o terminal cmd e entre na pasta do projeto:
-    C:\> cd [SUA PASTA]\desafio_elogroup
+
+        C:\> cd [SUA PASTA]\desafio_elogroup
+
 Cria a venv com o comando:
-    C:\> pyhton3 -m venv venv
+
+        C:\> pyhton3 -m venv venv
+
 Ative a venv com o comando:
-    C:\> <venv>\Scripts\activate.bat
+
+        C:\> <venv>\Scripts\activate.bat
 
 ## Instalando os Pre-requisitos
 Uma vez a venv ativada, instale os requisitos necessários para o programa:
+
         C:\> pip install -r requirements.txt
 
 ## O Sistema
